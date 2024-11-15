@@ -1,0 +1,534 @@
+/* Styling for the chat box */
+/* .chat{
+    border-radius: 0px 0px 0px 5px;
+} */
+.chat-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    height: auto;
+    width: 380px;
+    z-index: 50;
+    margin-top: 16px;
+    color: #000000 !important;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 100px) and (max-width: 500px) {
+    .chat-box {
+        width: 100%;
+        right: 0;
+    }
+}
+
+
+.chat-box.sm {
+    bottom: 80px;
+    right: 16px;
+}
+
+/* Styling for the toggle button */
+.toggle-button {
+    position: fixed;
+    bottom: 8px;
+    right: 0;
+    margin: 10px;
+    z-index: 50;
+    background-color: white;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button.sm {
+    bottom: 8px;
+    right: 16px;
+}
+button
+{
+    border:none;
+}
+/* Styling for the SVG icon */
+.icon {
+    height: 28px;
+    width: 28px;
+    color: #133161;
+    /* text-blue-500 */
+}
+
+/* Scrollbar styling */
+.chat-history {
+    height: 350px;
+    padding: 8px;
+    overflow-y: scroll;
+}
+
+/* For WebKit browsers (e.g., Chrome, Safari) */
+.chat-history::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-history::-webkit-scrollbar-thumb {
+    background-color: #9fec9f;
+    border-radius: 10px;
+}
+
+/* For Firefox */
+.chat-history {
+    scrollbar-width: thin;
+    scrollbar-color: #9fec9f transparent;
+}
+
+/* Optional: Styling the scrollbar track */
+.chat-history::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* --------------------- */
+
+a {
+    text-decoration: none;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.custom-file-upload {
+    display: flex;
+    align-items: center;
+    background-color: #e9e5e5;
+    /* Match background with textarea */
+    padding: 12px;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.send-mess {
+    float: right;
+    bottom: 2;
+    margin: 0;
+    padding: 0;
+}
+
+h4,
+h5 {
+    line-height: 1.5em;
+    margin: 0;
+}
+
+hr {
+    background: #e9e9e9;
+    border: 0;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 1px;
+    margin: 0;
+    min-height: 1px;
+}
+
+img {
+    border: 0;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+input {
+    border: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+
+
+
+/* ---------- LIVE-CHAT ---------- */
+
+.chat-box header {
+    background: #00a336;
+    border-radius: 6px 6px 0 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px 20px;
+}
+
+
+
+.chat-box h4 {
+    font-size: 16px;
+}
+
+.chat-box h5 {
+    font-size: 10px;
+}
+
+.chat-box form {
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.chat-box input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 12px 0px 0px 12px;
+    padding: 8px;
+    outline: none;
+    width: 320px;
+}
+
+.chat-message-counter {
+    background: #e62727;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    height: 28px;
+    left: 0;
+    line-height: 28px;
+    margin: -15px 0 0 -15px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 28px;
+}
+
+.chat-close {
+    background: #92ee8f;
+    border-radius: 50%;
+    color: #000000;
+    display: block;
+    float: right;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+}
+
+.chat {
+    background: #fff;
+    border-radius: 6px;
+}
+
+.chat-message {
+    margin: 16px 0;
+}
+
+.chat-message svg {
+    border-radius: 50%;
+    float: left;
+}
+
+.chat-message-content {
+    margin-left: 56px;
+}
+
+.chat-time {
+    float: right;
+    font-size: 10px;
+}
+
+.chat-feedback {
+    font-style: italic;
+    margin: 0 0 0 80px;
+}
+
+/* --------------- */
+
+.chat-message1-counter {
+    background: #e62727;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    height: 28px;
+    right: 0;
+    line-height: 28px;
+    margin: -15px 0 0 -15px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 28px;
+}
+
+.chat-message1 {
+    margin: 16px 0;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.received {
+    justify-content: flex-start;
+    /* Messages received will align to the left */
+}
+
+.sent {
+    justify-content: flex-end;
+    /* Messages sent will align to the right */
+}
+
+.message-content {
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 10px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 70%;
+    /* Adjusted max width */
+    word-wrap: break-word;
+    background-color: #9fec9f;
+    /* Sent message background color */
+}
+
+.message-content1 {
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 10px;
+    border-top-left-radius: 0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+    /* Adjusted max width */
+    word-wrap: break-word;
+    background-color: #ffffff;
+    /* Received message background color */
+}
+
+.message-content1 span,
+.message-content span {
+    display: block;
+    font-size: 12px;
+    color: #333131;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.message-content1 p,
+.message-content p {
+    font-size: small;
+    margin: 0;
+}
+
+
+/* ------index------ */
+#message-input {
+    width: 90%;
+    background-color: #e9e5e5;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    box-sizing: border-box;
+    resize: none;
+    /* Prevent resizing */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    max-height: calc(4.5em * 3);
+    /* Maximum height for 3 rows */
+    line-height: 1.5em;
+    /* Line height for proper row height */
+}
+
+/* Optional: Style scrollbar */
+#message-input::-webkit-scrollbar {
+    width: 3px;
+    /* Width of the scrollbar */
+}
+
+#message-input::-webkit-scrollbar-thumb {
+    background: #34db5e;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded corners for scrollbar thumb */
+}
+
+#message-input::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the scrollbar track */
+}
+
+.chatbox-index-header {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+    background-color: #00a336;
+    color: white;
+}
+
+
+.chatbox-header p {
+    font-size: 0.9em;
+}
+
+.chatbox-index-aass {
+    width: 100%;
+    height: 340px;
+}
+
+.chatbox-index-conversations {
+    width: 90%;
+    margin-left: 20px;
+    margin-top: -20px;
+    border-radius: 12px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.convo-header h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #00a336;
+}
+
+.convo-item {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.convo-icon svg {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.convo-text p {
+    text-align: left;
+    margin-bottom: 3px;
+    color: #333;
+}
+
+.convo-actions {
+    display: flex;
+    flex-direction: column;
+    /* Aligns items in a column (one below the other) */
+    align-items: flex-end;
+    /* Aligns items to the right side */
+    margin-left: auto;
+}
+
+.convo-status {
+    color: #00a336;
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* Adds space between status text and SVG */
+}
+
+.convo-actions a {
+    display: block;
+}
+
+.convo-text p {
+    margin-bottom: 3px;
+    color: #333;
+}
+
+.convo-status {
+    margin-left: auto;
+    color: #00a336;
+    font-weight: bold;
+}
+
+.convo-btn {
+    background-color: #00a336;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.search-container input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-container .search-btn {
+    background-color: #00a336;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+}
+
+.new-convo-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #00a336;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.new-convo-btn .icon {
+    margin-right: 8px;
+    /* Space between the icon and text */
+}
+
+.chatbox-index-footer {
+    text-align: center;
+    padding: 10px;
+    border-radius: 0px 0px 6px 6px;
+    background-color: #f5f5f5;
+}
+
+.chatbox-index-footer .add-chat-btn {
+    color: #00a336;
+    text-decoration: none;
+}
+
+.count-button {
+    color: white;
+    width: 20px;
+    height: 20px;
+    line-height: 16px;
+    border-radius: 50%;
+    background-color: #00a336;
+    z-index: -1px;
+    top: 13px;
+    right: 5px;
+    position: relative;
+}

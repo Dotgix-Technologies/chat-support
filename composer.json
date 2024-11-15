@@ -1,0 +1,27 @@
+{
+    "name": "dotgix/chatsupport",
+    "description": "This laravel library package willl include live chat support system along with admin adn consultant side in project",
+    "type": "library",
+    "require": {
+        "pusher/pusher-php-server": "^7.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dotgix\\Chatsupport\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dotgix Technologies"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dotgix\\Chatsupport\\ChatSupportServiceProvider"
+            ]
+        }
+    }
+}
