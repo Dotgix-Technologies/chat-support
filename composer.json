@@ -1,6 +1,6 @@
 {
     "name": "dotgix/chatsupport",
-    "description": "This laravel library package willl include live chat support system along with admin adn consultant side in project",
+    "description": "This Laravel library package will include live chat support system along with admin and consultant side in the project.",
     "type": "library",
     "require": {
         "pusher/pusher-php-server": "^7.2"
@@ -16,7 +16,9 @@
             "name": "Dotgix Technologies"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",  // Change minimum-stability to stable
+    "prefer-stable": true,  // Ensure Composer prefers stable versions
+    "version": "1.0.0",  // Add a version number for the release
     "extra": {
         "laravel": {
             "providers": [
